@@ -24,7 +24,7 @@
                     <li class="hero__nav-li hero__nav-li--active"><a href="./index.html" class="hero__link"><span class="hero__number">00</span>HOME</a></li>
                     <li class="hero__nav-li"><a href="./destination-moon.html" class="hero__link"><span class="hero__number">01</span>DESTINATION</a></li>
                     <li class="hero__nav-li"><a href="./crew-commander.html" class="hero__link"><span class="hero__number">02</span>CREW</a></li>
-                    <li class="hero__nav-li"><a href="#technology" class="hero__link"><span class="hero__number">03</span>TECHNOLOGY</a></li>
+                    <li class="hero__nav-li"><a href="./technology-vehicle.html" class="hero__link"><span class="hero__number">03</span>TECHNOLOGY</a></li>
                 </ul>
             </nav>
             <figure class="hero__figure-menu">
@@ -36,14 +36,15 @@
             <h3 class="destination__message"><span class="destination__number">01</span>Pick your destination</h3>
             <section class="destination-content">
                 <figure class="destination__figure">
-                    <img src="./assets/destination/image-moon.png" alt="Moon" class="destination__img">
+                    <img id="destinationImg" src="./assets/destination/image-moon.png" alt="Moon" class="destination__img">
                 </figure>
                 <section class="destination__information">
                     <ul class="destination__information-content">
-                        <li class="destination__information-option">MOON</li>
-                        <li class="destination__information-option">MARS</li>
-                        <li class="destination__information-option">EUROPA</li>
-                        <li class="destination__information-option">TITAN</li>
+                        <!-- destination__information-option--active -->
+                        <li id="moon" class="destination__information-option destination__information-option--active">MOON</li>
+                        <li id="mars" class="destination__information-option">MARS</li>
+                        <li id="europa" class="destination__information-option">EUROPA</li>
+                        <li id="titan" class="destination__information-option">TITAN</li>
                     </ul>
                     <div class="destination__information-texts">
                         <h1 class="destination__information-title">MOON</h1>
@@ -68,6 +69,7 @@
                 </section>
             </section>
         </div>
+        <script defer src="./js/script.js"></script>
     <!-- </main>
   00 Home
   01 Destination
