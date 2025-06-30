@@ -1,0 +1,157 @@
+@use 'variables';
+.technology-bg {
+    background-image: url(#{variables.$img-background-technology-mobile});
+    @media screen and (min-width: 768px) {
+        background-image: url(#{variables.$img-background-technology-tablet});
+    }
+    @media screen and (min-width: 1024px) {
+        background-image: url(#{variables.$img-background-technology-desktop});
+    }
+}   
+
+.technology {
+    .wrapper {
+        @media screen and (min-width: 768px) {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+        @media screen and (min-width: 1024px) {
+            padding: 48px 110px;
+            max-width: 1440px;
+        }
+    }
+
+    &-content {
+        margin-top: 40px;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 24px;
+        }
+    }
+
+    &__figure {
+        width: 100%;
+        height: 258px;
+        border: 1px solid blue;
+        @media screen and (min-width: 768px) {
+            height: 356px;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 608px; height: 600px;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        transform: scale(1.1);
+        @media screen and (min-width: 768px) {
+            max-height: 356px;
+            transform: scale(1);
+        }
+        @media screen and (min-width: 1024px) {
+            max-height: auto;
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        color: #fff;
+        margin-top: 10%;
+        @media screen and (min-width: 768px) {
+            margin-top: 16px;
+        }
+        @media screen and (min-width: 1024px) {
+            margin-top: 0;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__options {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        @media screen and (min-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+
+    &__option {
+        display: grid;
+        place-items: center;
+        width: 40px; height: 40px;
+        border: 1px solid #ffffff69;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+            color: variables.$clr-blue-900;
+        }
+        &--active {
+            background-color: #fff;
+            color: variables.$clr-blue-900;
+        }
+        @media screen and (min-width: 768px) {
+            width: 56px; height: 56px;
+            font-size: 24px;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 80px; height: 80px;
+        }
+    }
+
+    &__texts {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            width: 512px;
+            margin-inline: auto;
+        }
+        @media screen and (min-width: 1024px) {
+            text-align: start;
+            width: 491px;
+        }
+    }
+
+    &__terminology {
+        color: #fff;
+        font-size: 18px;
+        opacity: 0.5;
+        font-family: "Bellefair", serif;
+        font-weight: 400;
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 32px;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        margin: 16px 0 24px;
+        font-weight: 400;
+        @media screen and (min-width: 768px) {
+            font-size: 40px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 56px;
+        }
+    }
+
+    &__paragraph {
+        font-size: 15px;
+        line-height: 1.8;
+        color: variables.$clr-blue-300;
+        font-weight: 400;
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+}
