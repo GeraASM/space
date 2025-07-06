@@ -44,7 +44,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border: 1px solid greenyellow;
   gap: 0px;
 }
 @media screen and (min-width: 1024px) {
@@ -84,14 +83,15 @@ a {
   top: 0;
   right: 0;
   height: 100%;
-  padding-right: 40px;
   padding-left: 40px;
   padding-top: 40px;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.0823529412);
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .hero__nav {
+    padding-right: 40px;
     padding-top: 0;
     display: block;
     width: fit-content;
@@ -104,6 +104,7 @@ a {
   display: block;
   object-fit: contain;
   margin-left: auto;
+  margin-right: 30px;
   margin-bottom: 120px;
 }
 @media screen and (min-width: 768px) {
@@ -128,20 +129,19 @@ a {
   align-content: center;
   position: relative;
 }
-.hero__nav-li--active::before {
+.hero__nav-li--active::after {
   content: "";
   position: absolute;
-  background-color: #fff;
+  bottom: 0;
+  right: 0;
   height: 25px;
   width: 3px;
-  bottom: 0;
-  right: -39px;
+  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .hero__nav-li--active::before {
+  .hero__nav-li--active::after {
     width: 100%;
     height: 4px;
-    right: 0;
   }
 }
 .hero__link {
@@ -151,6 +151,7 @@ a {
   font-weight: 400;
   letter-spacing: 2px;
   display: inline-block;
+  cursor: pointer;
 }
 .hero__number {
   margin-right: 0.4rem;
@@ -162,9 +163,6 @@ a {
   width: 24px;
   height: 21px;
   transition: transform 0.4s ease;
-}
-.hero__figure-menu:hover {
-  transform: scale(1.01);
 }
 .hero__btn-menu {
   object-fit: contain;
@@ -185,7 +183,6 @@ a {
 
 .wrapper {
   padding: 24px;
-  border: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -198,17 +195,15 @@ a {
     height: 100%;
     max-width: 1440px;
     margin-inline: auto;
+    align-content: end;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .home__principal {
-    margin-top: auto;
-    min-height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    align-items: flex-end;
+    align-items: center;
   }
 }
 .home-content {
@@ -217,6 +212,7 @@ a {
 @media screen and (min-width: 1024px) {
   .home-content {
     text-align: start;
+    height: 100%;
   }
 }
 .home__message, .home__paragraph {
@@ -244,6 +240,7 @@ a {
   .home__paragraph {
     font-size: 16px;
     width: 512px;
+    margin: 0;
   }
 }
 .home__title {
@@ -261,13 +258,13 @@ a {
 .home__explore {
   width: 100%;
   height: 382px;
-  border: 1px solid red;
   display: grid;
   place-items: center;
 }
 @media screen and (min-width: 1024px) {
   .home__explore {
     width: fit-content;
+    margin-left: auto;
   }
 }
 .home__explore-link {
@@ -347,7 +344,6 @@ a {
   .destination-content {
     display: flex;
     height: 734px;
-    border: 1px solid blue;
     margin-top: 24px;
     align-items: center;
   }
@@ -469,10 +465,12 @@ a {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
+  height: 140px;
 }
 @media screen and (min-width: 768px) {
   .destination__information-description {
     font-size: 16px;
+    height: 100px;
   }
 }
 .destination__information-data {
@@ -535,7 +533,6 @@ a {
 }
 .crew-content {
   height: 700px;
-  border: 1px solid greenyellow;
   margin-top: 24px;
   overflow: hidden;
 }
@@ -559,6 +556,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   opacity: 0.5;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .crew__who {
@@ -575,6 +573,7 @@ a {
   font-size: 24px;
   font-weight: 400;
   margin: 12px 0 24px;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .crew__name {
@@ -591,6 +590,7 @@ a {
   font-weight: 400;
   line-height: 1.8;
   color: #D0D6F9;
+  height: 120px;
 }
 @media screen and (min-width: 768px) {
   .crew__description {
@@ -652,7 +652,6 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .crew__picture {
-    background-image: linear-gradient(to bottom, transparent, transparent), url("../assets/crew/image-douglas-hurley.png");
     height: 700px;
   }
 }
@@ -674,13 +673,14 @@ a {
 @media screen and (min-width: 768px) {
   .technology .wrapper {
     padding-top: 40px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
   .technology .wrapper {
-    padding: 48px 110px;
+    padding: 0 110px;
     max-width: 1440px;
+    padding-bottom: 48px;
   }
 }
 .technology-content {
@@ -696,7 +696,6 @@ a {
 .technology__figure {
   width: 100%;
   height: 258px;
-  border: 1px solid blue;
 }
 @media screen and (min-width: 768px) {
   .technology__figure {
@@ -714,6 +713,7 @@ a {
   width: 100%;
   object-fit: contain;
   transform: scale(1.1);
+  object-fit: contain;
 }
 @media screen and (min-width: 768px) {
   .technology__img {
@@ -724,6 +724,8 @@ a {
 @media screen and (min-width: 1024px) {
   .technology__img {
     max-height: auto;
+    object-fit: contain;
+    min-height: 100%;
   }
 }
 .technology__information {

@@ -18,7 +18,7 @@
             </picture>
             <div class="line"></div>
             <nav class="hero__nav">
-                <img src="./assets/shared/icon-close.svg" alt="" class="hero__nav--close">
+                <img src="./assets/shared/icon-close.svg" alt="Close" class="hero__nav--close">
                 <ul class="hero__nav-ul">
                     <!-- hero__nav-li--active -->
                     <li class="hero__nav-li"><a href="./index.html" class="hero__link"><span class="hero__number">00</span>HOME</a></li>
@@ -47,8 +47,8 @@
                         <li id="titan" class="destination__information-option">TITAN</li>
                     </ul>
                     <div class="destination__information-texts">
-                        <h1 class="destination__information-title">MOON</h1>
-                        <p class="destination__information-description">
+                        <h1 id="title" class="destination__information-title">MOON</h1>
+                        <p id="description" class="destination__information-description">
                             See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
                             regain perspective and come back refreshed. While you’re there, take in some history 
                             by visiting the Luna 2 and Apollo 11 landing sites.
@@ -57,11 +57,11 @@
                         <section class="destination__information-data">
                             <article class="destination__information-part">
                                 <h3>AVG. DISTANCE</h3>
-                                <h2>384,400 KM</h2>
+                                <h2 id="distance">384,400 KM</h2>
                             </article>
                             <article class="destination__information-part">
                                 <h3>EST. TRAVEL TIME</h3>
-                                <h2>3 DAYS</h2>
+                                <h2 id="time">3 DAYS</h2>
                             </article>
                         </section>
                     </div>
@@ -69,7 +69,8 @@
                 </section>
             </section>
         </div>
-        <script defer src="./js/script.js"></script>
+    </main>
+    <script defer src="./js/script.js"></script>
     <!-- </main>
   00 Home
   01 Destination

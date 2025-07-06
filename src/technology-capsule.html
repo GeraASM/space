@@ -18,7 +18,7 @@
         </picture>
         <div class="line"></div>
         <nav class="hero__nav">
-            <img src="./assets/shared/icon-close.svg" alt="" class="hero__nav--close">
+            <img src="./assets/shared/icon-close.svg" alt="Close" class="hero__nav--close">
             <ul class="hero__nav-ul">
                 <!-- hero__nav-li--active -->
                 <li class="hero__nav-li"><a href="./index.html" class="hero__link"><span class="hero__number">00</span>HOME</a></li>
@@ -36,19 +36,19 @@
             <h3 class="destination__message"><span class="destination__number">03</span>Space launch 101</h3>
             <section class="technology-content">
                 <figure class="technology__figure">
-                    <img src="./assets/technology/image-spaceport-landscape.jpg" alt="Capsule" class="technology__img">
+                    <img id="imgT" src="./assets/technology/image-space-capsule-landscape.jpg" alt="vehicle" class="technology__img">
                     <!-- <img src="./assets/technology/image-spaceport-portrait.jpg" alt="Capsule" class="technology__img"> -->
                 </figure>
                 <div class="technology__information">
                     <div class="technology__options">
-                        <p class="technology__option technology__option--active">1</p>
-                        <p class="technology__option">2</p>
-                        <p class="technology__option ">3</p>
+                        <p id="vehicle" class="technology__option ">1</p>
+                        <p id="spaceport" class="technology__option">2</p>
+                        <p id="capsule" class="technology__option technology__option--active">3</p>
                     </div>
                     <div class="technology__texts">
                         <h3 class="technology__terminology">THE TERMINOLOGY...</h3>
-                        <h2 class="technology__title">SPACEPORT</h2>
-                        <p class="technology__paragraph">
+                        <h2 id="titleT" class="technology__title">CAPSULE</h2>
+                        <p id="paragraphT" class="technology__paragraph">
                             A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
                             capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
                             you'll spend your time during the flight. It includes a space gym, cinema, 
@@ -59,6 +59,7 @@
             </section>
         </div>
     </main>
+    <script defer src="./js/script.js"></script>
   <!-- 00 Home
   01 Destination
   02 Crew

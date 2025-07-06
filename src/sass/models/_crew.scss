@@ -26,7 +26,6 @@
 
     &-content {
         height: 700px;
-        border: 1px solid greenyellow;
         margin-top: 24px;
         overflow: hidden;
         @media screen and (min-width: 1024px) {
@@ -48,6 +47,7 @@
         font-size: 18px;
         font-weight: 400;
         opacity: 0.5;
+        text-transform: uppercase;
         @media screen and (min-width: 768px) {
             font-size: 24px;
         }
@@ -61,6 +61,7 @@
         font-size: 24px;
         font-weight: 400;
         margin: 12px 0 24px;
+        text-transform: uppercase;
         @media screen and (min-width: 768px) {
             font-size: 40px;
         }
@@ -74,6 +75,7 @@
         font-weight: 400;
         line-height: 1.8;
         color: variables.$clr-blue-300;
+        height: 120px;
         @media screen and (min-width: 768px) {
             font-size: 16px;
         }
@@ -126,9 +128,6 @@
 
         }
         @media screen and (min-width: 1024px) {
-            background-image: 
-            linear-gradient(to bottom, transparent, transparent),
-            url("../assets/crew/image-douglas-hurley.png");
             height: 700px;
         }
     }

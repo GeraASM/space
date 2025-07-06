@@ -49,7 +49,6 @@
         @media screen and (min-width: 1024px) {
             display: flex;
             height: 734px;
-            border: 1px solid blue;
             margin-top: 24px;
             align-items: center;
         }
@@ -149,8 +148,10 @@
             font-size: 15px;
             font-weight: 400;
             line-height: 1.8;
+            height: 140px;
             @media screen and (min-width: 768px) {
                 font-size: 16px;
+                height: 100px;
             }
 
         }
